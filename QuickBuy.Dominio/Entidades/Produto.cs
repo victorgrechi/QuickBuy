@@ -9,7 +9,8 @@
 
         public override void Validate()
         {
-            throw new System.NotImplementedException();
+            if (Preco == 0)
+                AdicionarCritica("O produto deve ter um preço");
         }
     }
 }
